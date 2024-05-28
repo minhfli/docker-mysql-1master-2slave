@@ -11,6 +11,7 @@ services:
       - ./master/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./master/data:/var/lib/mysql
       - ./create_db.sql:/create_db.sql
+      - ./supermarket2:/supermarket2
     networks:
       - overlay
 
